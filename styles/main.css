@@ -1,0 +1,48 @@
+main{
+    display: flex;
+    justify-content: space-between;
+    min-height: 90vh;
+}
+
+.playingVideo{
+    padding: 2em 0 2em 2em;
+}
+
+.playingVideo h1{
+    color: #ffffff;
+    padding-bottom: .7em;
+    font-size: 2.3em;
+}
+
+.playingVideo video{
+    border: 2px solid #ffffff;
+    width: 65vw;
+}
+
+#tutorials{
+    min-width: 25vw;
+    border-left: 1px solid #ffffff;
+    padding: 2em 2em 0 2em;
+}
+
+#tutorials h2{
+    color: #ffffff;
+    font-size: 2.3em;
+    padding-bottom: .7em;
+}
+
+/* #videos{
+    list-style: none;
+} */
+
+#videos li{
+    font-size: 1.5em;
+    padding-bottom: 1em;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+#videos li:hover{
+    color: aquamarine;
+}
+

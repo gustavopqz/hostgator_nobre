@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/all.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/footer.css">
+
+    <script src="./scripts/changeVideo.js" defer></script>
+    <title>Tutorial Portal do aluno</title>
+</head>
+<body>
+    <header>
+        <logo><img id="headerLogo" src="./imgs/cn_logo.png" alt="colegio_logo"></logo>
+    </header>
+    <main>
+        <div class="playingVideo">
+            <h1 id="videoTitle">1. Menu lateral</h1>
+            <video id="video" src="./videos/1.mp4" controls></video>
+        </div>
+        <div id="tutorials">
+            <h2>Tutoriais</h2>
+            <ul id="videos">
+                <li onclick="changeVideo(event)">1. Menu lateral</li>
+                <li onclick="changeVideo(event)">2. Disciplina</li>
+            </ul>
+        </div>
+    </main>
+    <footer>
+        <div class="footerDiv" id="logoDiv">
+            <img id="logoFooter" src="./imgs/cn_logo.png" alt="Logo Colégio Nobre">
+        </div>
+        <div class="footerDiv" id="location">
+            <p>Rua Professora Edelvira de Oliveira, nº 232</p>
+            <p>Bairro São João – CEP 44051754 - Feira de Santana – BA</p>
+            <p>Telefone: (75) 2102-9100</p>
+        </div>
+    </footer>
+</body>
+</html>
