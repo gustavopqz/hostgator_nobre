@@ -7,9 +7,9 @@ const changeVideo = e =>{
 
 
     videoTitle.textContent = target
-    if(target == "1. Menu lateral"){
-        video.setAttribute('src', './menu-lateral.mp4')
-    }else if(target == "2. Disciplina"){
-        video.setAttribute('src', './disciplina.mp4')
+    if(target == "1. Entrando no portal e Esqueci minha senha"){
+        video.setAttribute('src', './videos/1.mp4')
+    }else if(target == "2. Tela inicial - Mural"){
+        video.setAttribute('src', './videos/2.mp4')
     }
 }
