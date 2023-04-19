@@ -1,33 +1,51 @@
 const videoTitle = document.getElementById('videoTitle')
 const video = document.getElementById('video')
+const steps = Array.from(document.getElementsByClassName('step'))
 
 const changeVideo = e =>{
     e.preventDefault()
-    const target = e.target.textContent
+
+    steps.forEach(element =>{
+        element.classList.remove('active')
+    })
+    const step = e.target
+    const stepNumber = e.target.children[1].children[0].textContent
+    const stepDescription = e.target.children[1].children[1].textContent
 
     video.setAttribute('autoplay', '')
-    videoTitle.textContent = target
-    if(target == "1. Entrando no portal e Esqueci minha senha"){
-        video.setAttribute('src', './videos/1.mp4')
-    }else if(target == "2. Tela inicial - Mural"){
-        video.setAttribute('src', './videos/2.mp4')
-    }else if(target == "3. Menu lateral"){
-        video.setAttribute('src', './videos/3.mp4')
-    }else if(target == "4. Disciplinas"){
-        video.setAttribute('src', './videos/4.mp4')
-    }else if(target == "5. Entraga de trabalho"){
-        video.setAttribute('src', './videos/5.mp4')
-    }else if(target == "6. Central do aluno - Desempenho"){
-        video.setAttribute('src', './videos/6.mp4')
-    }else if(target == "7. Central do aluno - Faltas"){
-        video.setAttribute('src', './videos/7.mp4')
-    }else if(target == "8. Central do aluno - Histórico"){
-        video.setAttribute('src', './videos/8.mp4')
-    }else if(target == "9. Central do aluno - Notas"){
-        video.setAttribute('src', './videos/9.mp4')
-    }else if(target == "10. Central do aluno - Ocorrências"){
-        video.setAttribute('src', './videos/10.mp4')
-    }else if(target == "11. Financeiro"){
-        video.setAttribute('src', './videos/11.mp4')
+    videoTitle.textContent = stepNumber + ': ' + stepDescription
+    if(stepNumber.match('Primeiro')){
+        video.setAttribute('src','../videos/1.mp4')
+        step.classList.add('active')
+    }else if(stepNumber.match('Segundo')){
+        video.setAttribute('src','../videos/2.mp4')
+        step.classList.add('active')
+    }else if(stepNumber.match('Terceiro')){
+        video.setAttribute('src','../videos/3.mp4')
+        step.classList.add('active')
+    }else if(stepNumber.match('Quarto')){
+        video.setAttribute('src','../videos/4.mp4')
+        step.classList.add('active')
+    }else if(stepNumber.match('Quinto')){
+        video.setAttribute('src','../videos/5.mp4')
+        step.classList.add('active')
+    }else if(stepNumber.match('Sexto')){
+        video.setAttribute('src','../videos/6.mp4')
+        step.classList.add('active')
+    }else if(stepNumber.match('Sétimo')){
+        video.setAttribute('src','../videos/7.mp4')
+        step.classList.add('active')
+    }else if(stepNumber.match('Oitavo')){
+        video.setAttribute('src','../videos/8.mp4')
+        step.classList.add('active')
+    }else if(stepNumber.match('Nono')){
+        video.setAttribute('src','../videos/9.mp4')
+        step.classList.add('active')
+    }else if(stepNumber.match('Décimo Passo')){
+        video.setAttribute('src','../videos/10.mp4')
+        step.classList.add('active')
+    }else if(stepNumber.match('Décimo primeiro')){
+        video.setAttribute('src','../videos/11.mp4')
+        step.classList.add('active')
     }
 }

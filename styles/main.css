@@ -8,9 +8,8 @@ main{
     padding: 2em;
 }
 
-.playingVideo h1{
+#videoTitle{
     color: #ffffff;
-    padding-bottom: .7em;
     font-size: 2.3em;
 }
 
@@ -21,45 +20,64 @@ main{
 
 #tutorials{
     min-width: 25vw;
-    border-right: 1px solid #ffffff;
+    /* border-right: 1px solid #ffffff; */
     border-top: 1px solid var(--darkblue);
-    background-color: #ffffff;
-    color: var(--logoblue);
+    color: #ffffff;
+    padding-top: 2em;
 }
 
 #tutorials h2{
-    font-size: 2.3em;
+    font-size: 2em;
     padding-inline: 1em;
     border-bottom: 1px solid var(--darkblue);
 }
 
 #videos{
+    margin-top: 1em;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     min-height: 100%;
+    gap: 1em;
 }
 
-#videos li{
-    font-size: 1.5em;
-    color: var(--logoblue);
+.step{
+    font-size: 1.2em;
+    color: #ffffff;
     cursor: pointer;
     list-style: none;
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding-inline: 10px;
+    width: 100%;
+    margin-left: 7%;
+    border-radius: 4px 0 0 4px;
+    transition: ease .2s;
 }
 
-#videos li h3{
+.step h3{
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
-#videos li img{
-    width: 50px;
+.step img{
+    width: 40px;
+    height: 40px;
 }
 
-#videos li:hover{
-    color: aquamarine;
+.step:hover{
+    color: var(--logoblue);
+    background-color: #ffffff;
+}
+
+.active{
+    color: var(--logoblue);
+    background-color: #ffffff;
+    border-right: 2px solid #ffffff;
+}
+
+img, h3, p, .textContent{
+    pointer-events: none;
 }
 
