@@ -10,6 +10,8 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 75vw;
+    align-items: center;
 }
 
 #videoTitle{
@@ -20,7 +22,7 @@ main{
 
 .playingVideo video{
     border: 2px solid #ffffff;
-    width: 75vw;
+    width: 70vw;
 }
 
 #tutorials{
