@@ -20,11 +20,12 @@ main{
 
 .playingVideo video{
     border: 2px solid #ffffff;
-    width: 65vw;
+    width: 75vw;
 }
 
 #tutorials{
     min-width: 25vw;
+    max-width: 25vw;
     border-top: 1px solid var(--darkblue);
     color: #ffffff;
     background-color: #00000090;
