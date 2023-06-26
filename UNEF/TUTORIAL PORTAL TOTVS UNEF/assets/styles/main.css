@@ -1,0 +1,128 @@
+main{
+    display: flex;
+    justify-content: space-between;
+    min-height: 85vh;
+}
+
+.playingVideo{
+    padding-inline: 2em;
+    background-color: #00000090;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#videoTitle{
+    color: #ffffff;
+    font-size: 2.3em;
+    padding-bottom: .3em;
+}
+
+.playingVideo video{
+    border: 2px solid #ffffff;
+    width: 65vw;
+}
+
+#tutorials{
+    min-width: 25vw;
+    border-top: 1px solid var(--darkblue);
+    color: #ffffff;
+    background-color: #00000090;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    padding: 1em 0;
+    padding-left: 2em;
+}
+
+#tutorials h2{
+    font-size: 2em;
+    text-align: center;
+    border-bottom: 1px solid var(--darkblue);
+}
+
+#videos{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    /* min-height: 100%;
+    gap: 1em; */
+}
+
+.step{
+    font-size: 1.2em;
+    color: #ffffff;
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-inline: 10px;
+    width: 100%;
+    /* margin-left: 7%; */
+    border-radius: 4px 0 0 4px;
+    transition: ease .2s;
+}
+
+.step h3{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.step img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50em;
+}
+
+.step:hover{
+    color: var(--logoblue);
+    background-color: #ffffff;
+}
+
+.active{
+    color: var(--logoblue);
+    background-color: #ffffff;
+    border-right: 2px solid #ffffff;
+}
+
+img, h3, p, .textContent{
+    pointer-events: none;
+}
+
+@media (max-width: 1040px){
+    main{
+        min-height: none;
+        flex-direction: column;
+    }
+    #tutorials{
+        padding-left: 0;
+    }
+    #tutorials h2{
+        text-align: center;
+    }
+    .step{
+        margin-inline: 0;
+        border-radius: 0;
+        min-height: 4em;
+    }
+    #videoTitle{
+        font-size: 1.2rem;
+        text-align: center;
+        padding-bottom: 0em;
+    }
+    .playingVideo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding-bottom: 1em;
+    }
+    #video{
+        min-width: 80vw;
+    }
+}
+
