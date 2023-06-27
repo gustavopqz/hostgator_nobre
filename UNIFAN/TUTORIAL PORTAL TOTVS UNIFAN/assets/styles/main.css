@@ -10,8 +10,6 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 75vw;
-    align-items: center;
 }
 
 #videoTitle{
@@ -22,12 +20,11 @@ main{
 
 .playingVideo video{
     border: 2px solid #ffffff;
-    width: 70vw;
+    width: 65vw;
 }
 
 #tutorials{
     min-width: 25vw;
-    max-width: 25vw;
     border-top: 1px solid var(--darkblue);
     color: #ffffff;
     background-color: #00000090;
@@ -103,7 +100,6 @@ img, h3, p, .textContent{
     }
     #tutorials{
         padding-left: 0;
-        max-width: 100%;
     }
     #tutorials h2{
         text-align: center;
@@ -124,7 +120,6 @@ img, h3, p, .textContent{
         align-items: center;
         gap: 10px;
         padding-bottom: 1em;
-        width: 100%;
     }
     #video{
         min-width: 80vw;
