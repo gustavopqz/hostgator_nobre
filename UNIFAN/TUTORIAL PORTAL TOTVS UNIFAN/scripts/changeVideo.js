@@ -76,6 +76,6 @@ const changeVideo = e =>{
     
     if(window.innerWidth < 1040){
         video.scrollIntoView({ behavior: 'smooth' });
-        video.requestFullscreen()
+        // video.requestFullscreen()
     }
 }
