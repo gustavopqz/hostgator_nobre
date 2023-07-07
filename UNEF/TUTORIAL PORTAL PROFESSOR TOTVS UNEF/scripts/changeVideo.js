@@ -27,51 +27,6 @@ const changeVideo = e =>{
     }else if(stepNumber.match('Quarto')){
         video.setAttribute('src','./videos/4.mp4')
         step.classList.add('active')
-    }else if(stepNumber.match('Quinto')){
-        video.setAttribute('src','./videos/5.mp4')
-        step.classList.add('active')
-    }else if(stepNumber.match('Sexto')){
-        video.setAttribute('src','./videos/6.mp4')
-        step.classList.add('active')
-    }else if(stepNumber.match('Sétimo')){
-        video.setAttribute('src','./videos/7.mp4')
-        step.classList.add('active')
-    }else if(stepNumber.match('Oitavo')){
-        video.setAttribute('src','./videos/8.mp4')
-        step.classList.add('active')
-    }else if(stepNumber.match('Nono')){
-        video.setAttribute('src','./videos/9.mp4')
-        step.classList.add('active')
-    }else if(stepNumber.match('Décimo Passo')){
-        video.setAttribute('src','./videos/10.mp4')
-        step.classList.add('active')
-    }else if(stepNumber.match('Décimo primeiro')){
-        video.setAttribute('src','./videos/11.mp4')
-        step.classList.add('active')
-    }else if(stepNumber.match('Décimo segundo')){
-        video.setAttribute('src','./videos/12.mp4')
-        step.classList.add('active')
-    }else if(stepNumber.match('Décimo terceiro')){
-        video.setAttribute('src','./videos/13.mp4')
-        step.classList.add('active')
-    }else if(stepNumber.match('Décimo quarto')){
-        video.setAttribute('src','./videos/14.mp4')
-        step.classList.add('active')
-    }else if(stepNumber.match('Décimo quinto')){
-        video.setAttribute('src','./videos/15.mp4')
-        step.classList.add('active')
-    }else if(stepNumber.match('Décimo sexto')){
-        video.setAttribute('src','./videos/16.mp4')
-        step.classList.add('active')
-    }else if(stepNumber.match('Décimo sétimo')){
-        video.setAttribute('src','./videos/17.mp4')
-        step.classList.add('active')
-    }else if(stepNumber.match('Décimo oitavo')){
-        video.setAttribute('src','./videos/18.mp4')
-        step.classList.add('active')
-    }else if(stepNumber.match('Décimo nono')){
-        video.setAttribute('src','./videos/19.mp4')
-        step.classList.add('active')
     }
     
     if(window.innerWidth < 1040){

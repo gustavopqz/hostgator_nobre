@@ -10,7 +10,7 @@ html{
 }
 
 body{
-    background-color: #e66210d7;
+    background: url('../imgs/background1.jpeg');
     background-size: cover;
 }
 
