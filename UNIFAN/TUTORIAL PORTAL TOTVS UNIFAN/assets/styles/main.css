@@ -153,3 +153,12 @@ img, h3, p, .textContent{
     }
 }
 
+@media (max-height: 770px){
+    #container{
+        max-height: 35vw;
+    }
+    .playingVideo video{
+        border: 1px solid #ffffff;
+        width: 55vw;
+    }
+}
