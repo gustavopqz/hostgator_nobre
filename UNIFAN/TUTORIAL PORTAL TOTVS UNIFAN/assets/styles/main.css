@@ -161,4 +161,7 @@ img, h3, p, .textContent{
         border: 1px solid #ffffff;
         width: 55vw;
     }
+    #videoTitle{
+        font-size: 1.6em;
+    }
 }
