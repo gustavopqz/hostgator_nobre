@@ -3,8 +3,14 @@ header{
     min-height: 10vh;
     display: flex;
     align-items: center;
+    justify-content: center;
+}
+
+#top{
+    display: flex;
+    align-items: center;
     justify-content: space-between;
-    padding-inline: 1em;
+    width: 90%;
 }
 
 #headerLogo{
@@ -12,11 +18,16 @@ header{
     margin-left: 10px;
 }
 
+nav{
+    display: flex;
+    justify-content: center;
+}
+
 #navigation{
     list-style: none;
     display: flex;
     gap: 5vw;
-    margin-right: 10vw;
+    /* margin-right: 10vw; */
     font-size: 1.5em;
     color: var(--logoblue);
 }
