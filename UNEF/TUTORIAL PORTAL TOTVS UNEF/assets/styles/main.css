@@ -152,3 +152,22 @@ img, h3, p, .textContent{
     }
 }
 
+@media (max-height: 1000px) and (min-width: 1040px) {
+    #container{
+        max-height: 80vh;
+    }
+    .playingVideo video{
+        border: 1px solid #ffffff;
+        width: 55vw;
+    }
+    #videoTitle{
+        font-size: 1.6em;
+    }
+}
+
+@media (max-height: 660px) and (min-width: 1040px){
+    .playingVideo video{
+        max-width: 120vh;
+    }
+}
+
