@@ -56,9 +56,6 @@ nav{
     header{
         flex-direction: column;
     }
-    nacv{
-        width: 100%;
-    }
     #headerLogo{
         max-width: 150px;
         margin-top: 1em;
@@ -67,15 +64,12 @@ nav{
     #navigation{
         font-size: 1em;
         width: 100%;
-        /* justify-content: center; */
         margin-right: 0;
         gap: 0;
         margin-top: 1em;
         padding-bottom: 1em;
     }
     .navButton{
-        /* display: flex; */
-        /* align-items: center; */
         min-width: 33vw;
         text-align: center;
     }
@@ -86,9 +80,24 @@ nav{
 }
 
 @media (max-width: 780px){
-
-
-    #navigation{
-        display: none;
+    #top{
+        display: flex;
+        flex-direction: column;
     }
+    #navigation{
+        display: flex;
+        gap: 15px;
+    }
+    #navigation li{
+        background-color: var(--orange);
+        padding: .5em .3em;
+        color: #fff;
+        min-width: 45vw;
+    }
+    #navigation li a{
+        color: #fff;
+    }
+    /* #navigation{
+        display: none;
+    } */
 }
