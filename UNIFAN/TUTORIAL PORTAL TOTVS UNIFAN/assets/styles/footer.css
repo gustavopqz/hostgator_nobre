@@ -32,6 +32,7 @@ footer{
 @media (max-width: 1080px){
     footer{
         flex-direction: column;
+        padding-bottom: .2em;
     }
     .footerDiv{
         width: 100%;
@@ -39,6 +40,9 @@ footer{
     }
     #logoDiv{
         border-right: none;
+    }
+    #logoFooter{
+        max-width: 250px;
     }
     #location{
         padding: 1em 2em;
