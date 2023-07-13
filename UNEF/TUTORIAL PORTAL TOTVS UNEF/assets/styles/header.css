@@ -3,8 +3,15 @@ header{
     min-height: 10vh;
     display: flex;
     align-items: center;
+    justify-content: center;
+    padding: .5em 0;
+}
+
+#top{
+    display: flex;
+    align-items: center;
     justify-content: space-between;
-    padding: 1em;
+    width: 90%;
 }
 
 #headerLogo{
@@ -12,11 +19,16 @@ header{
     margin-left: 10px;
 }
 
+nav{
+    display: flex;
+    justify-content: center;
+}
+
 #navigation{
     list-style: none;
     display: flex;
     gap: 5vw;
-    margin-right: 10vw;
+    /* margin-right: 10vw; */
     font-size: 1.5em;
     color: var(--logoblue);
 }
@@ -74,20 +86,9 @@ header{
 }
 
 @media (max-width: 780px){
-    header{
-        flex-direction: row;
-        padding: .5em;
-        justify-content: space-around;
-    }
-    #navigation li:nth-child(1), #navigation li:nth-child(2){
+
+
+    #navigation{
         display: none;
-    }
-
-    #navigation li{
-        font-size: 1.3em;
-    }
-
-    #headerLogo{
-        margin-top: 0;
     }
 }

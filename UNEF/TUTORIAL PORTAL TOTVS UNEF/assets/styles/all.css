@@ -10,11 +10,40 @@ html{
 }
 
 body{
-    background: url('../imgs/background1.jpeg');
-    background-size: cover;
+  background: url('../imgs/background1.jpeg');
+  background-size: cover;
 }
 
 :root{
     --logoblue: #000;
     --darkblue: #000;
+}
+
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #000000 #af4d10;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 16px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #af4d10;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #000000;
+    border-radius: 10px;
+    border: 3px solid #af4d10;
+  }
+
+
+@media (max-width: 1040px){
+    body{
+        background: #af4d10;
+    }
 }

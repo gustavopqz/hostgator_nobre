@@ -17,158 +17,162 @@
 </head>
 <body>
     <header>
-        <a href="https://unef.edu.br/"><img id="headerLogo" src="./assets/imgs/unef_vertical.png" alt="logo_unef"></a>
-        <nav>
-            <ul id="navigation">
-                <li class="navButton"><a href="https://unef.edu.br/">Home</a></li>
-                <li class="navButton activeNavigation">Tutoriais - Portal do aluno</li>
-                <li class="navButton"><a href="http://gnunef.ddns.com.br:9577/FrameHTML/web/app/Edu/PortalEducacional/login/" target="_blank">Acesse o portal</a></li>
-            </ul>
-        </nav>
+        <div id="top">
+            <a href="https://unef.edu.br/"><img id="headerLogo" src="./assets/imgs/unef_vertical.png" alt="logo_unef"></a>
+            <nav>
+                <ul id="navigation">
+                    <li class="navButton"><a href="https://unef.edu.br/">Home</a></li>
+                    <li class="navButton activeNavigation">Tutoriais - Portal do aluno</li>
+                    <li class="navButton"><a href="http://gnunef.ddns.com.br:9577/FrameHTML/web/app/Edu/PortalEducacional/login/" target="_blank">Acesse o portal</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main>
-        <div id="tutorials">
-            <!-- <h2>Tutoriais - Portal do aluno</h2> -->
-            <ul id="videos">
-                <li onclick="changeVideo(event)" class="step active">
-                    <img src="./assets/imgs/acesso.png" alt="Login">
-                    <div class="textContent">
-                        <h3>Primeiro Passo</h3>
-                        <p>Acesso ao portal</p>
-                    </div>
-                </li>
-                <li onclick="changeVideo(event)" class="step">
-                    <img src="./assets/imgs/senha incorreta.png" alt="Login">
-                    <div class="textContent">
-                        <h3>Segundo Passo</h3>
-                        <p>Senha incorreta</p>
-                    </div>
-                </li>
-                <li onclick="changeVideo(event)" class="step">
-                    <img src="./assets/imgs/esqueceu a senha.png" alt="Login">
-                    <div class="textContent">
-                        <h3>Terceiro Passo</h3>
-                        <p>Esqueceu sua senha</p>
-                    </div>
-                </li>
-                <li onclick="changeVideo(event)" class="step">
-                    <img src="./assets/imgs/mural.png" alt="Login">
-                    <div class="textContent">
-                        <h3>Quarto Passo</h3>
-                        <p>Mural</p>
-                    </div>
-                </li>
-                <li onclick="changeVideo(event)" class="step">
-                    <img src="./assets/imgs/menu lateral.png" alt="Login">
-                    <div class="textContent">
-                        <h3>Quinto Passo</h3>
-                        <p>Menu lateral</p>
-                    </div>
-                </li>
-                <li onclick="changeVideo(event)" class="step">
-                    <img src="./assets/imgs/calendario.png" alt="Login">
-                    <div class="textContent">
-                        <h3>Sexto Passo</h3>
-                        <p>Calendário</p>
-                    </div>
-                </li>
-                <li onclick="changeVideo(event)" class="step">
-                    <img src="./assets/imgs/grade curricular.png" alt="Login">
-                    <div class="textContent">
-                        <h3>Sétimo Passo</h3>
-                        <p>Grade curricular</p>
-                    </div>
-                </li>
-                <li onclick="changeVideo(event)" class="step">
-                    <img src="./assets/imgs/quadro de horarios.png" alt="Login">
-                    <div class="textContent">
-                        <h3>Oitavo Passo</h3>
-                        <p>Quadro de horários</p>
-                    </div>
-                </li>
-                <li onclick="changeVideo(event)" class="step">
-                    <img src="./assets/imgs/rematricula.png" alt="Login">
-                    <div class="textContent">
-                        <h3>Nono Passo</h3>
-                        <p>Rematrícula online</p>
-                    </div>
-                </li>
-                <li onclick="changeVideo(event)" class="step">
-                    <img src="./assets/imgs/desempenho.png" alt="Login">
-                    <div class="textContent">
-                        <h3>Décimo Passo</h3>
-                        <p>Desempenho do aluno</p>
-                    </div>
-                </li>
-                <li onclick="changeVideo(event)" class="step">
-                    <img src="./assets/imgs/faltas.png" alt="Login">
-                    <div class="textContent">
-                        <h3>Décimo primeiro Passo</h3>
-                        <p>Faltas</p>
-                    </div>
-                </li>
-                <li onclick="changeVideo(event)" class="step">
-                    <img src="./assets/imgs/notas e faltas.png" alt="Login">
-                    <div class="textContent">
-                        <h3>Décimo segundo Passo</h3>
-                        <p>Notas e faltas unificadas</p>
-                    </div>
-                </li>
-                <li onclick="changeVideo(event)" class="step">
-                    <img src="./assets/imgs/notas.png" alt="Login">
-                    <div class="textContent">
-                        <h3>Décimo terceiro Passo</h3>
-                        <p>Notas</p>
-                    </div>
-                </li>
-                <li onclick="changeVideo(event)" class="step">
-                    <img src="./assets/imgs/requerimentos.png" alt="Login">
-                    <div class="textContent">
-                        <h3>Décimo quarto Passo</h3>
-                        <p>Requerimentos</p>
-                    </div>
-                </li>
-                <li onclick="changeVideo(event)" class="step">
-                    <img src="./assets/imgs/arquivos.png" alt="Login">
-                    <div class="textContent">
-                        <h3>Décimo quinto Passo</h3>
-                        <p>Arquivos</p>
-                    </div>
-                </li>
-                <li onclick="changeVideo(event)" class="step">
-                    <img src="./assets/imgs/financeiro.png" alt="Login">
-                    <div class="textContent">
-                        <h3>Décimo sexto Passo</h3>
-                        <p>Financeiro</p>
-                    </div>
-                </li>
-                <li onclick="changeVideo(event)" class="step">
-                    <img src="./assets/imgs/negociacao online.png" alt="Login">
-                    <div class="textContent">
-                        <h3>Décimo sétimo Passo</h3>
-                        <p>Negociação online</p>
-                    </div>
-                </li>
-                <li onclick="changeVideo(event)" class="step">
-                    <img src="./assets/imgs/avaliacao institucional.png" alt="Login">
-                    <div class="textContent">
-                        <h3>Décimo oitavo Passo</h3>
-                        <p>Avaliação institucional</p>
-                    </div>
-                </li>
-                <li onclick="changeVideo(event)" class="step">
-                    <img src="./assets/imgs/biblioteca.png" alt="Login">
-                    <div class="textContent">
-                        <h3>Décimo nono Passo</h3>
-                        <p>Biblioteca</p>
-                    </div>
-                </li>
-            </ul>
-        </div>
-        <div class="playingVideo">
-            <h1 id="videoTitle">Primeiro Passo: Entrando no portal e Esqueci minha senha</h1>
-            <video id="video" src="./videos/1.mp4" controls></video>
-            <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/zR29mGQv6FM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+        <div id="container">
+            <div id="tutorials">
+                <!-- <h2>Tutoriais - Portal do aluno</h2> -->
+                <ul id="videos">
+                    <li onclick="changeVideo(event)" class="step active">
+                        <img src="./assets/imgs/acesso.png" alt="Login">
+                        <div class="textContent">
+                            <h3>Primeiro Passo</h3>
+                            <p>Acesso ao portal</p>
+                        </div>
+                    </li>
+                    <li onclick="changeVideo(event)" class="step">
+                        <img src="./assets/imgs/senha incorreta.png" alt="Login">
+                        <div class="textContent">
+                            <h3>Segundo Passo</h3>
+                            <p>Senha incorreta</p>
+                        </div>
+                    </li>
+                    <li onclick="changeVideo(event)" class="step">
+                        <img src="./assets/imgs/esqueceu a senha.png" alt="Login">
+                        <div class="textContent">
+                            <h3>Terceiro Passo</h3>
+                            <p>Esqueceu sua senha</p>
+                        </div>
+                    </li>
+                    <li onclick="changeVideo(event)" class="step">
+                        <img src="./assets/imgs/mural.png" alt="Login">
+                        <div class="textContent">
+                            <h3>Quarto Passo</h3>
+                            <p>Mural</p>
+                        </div>
+                    </li>
+                    <li onclick="changeVideo(event)" class="step">
+                        <img src="./assets/imgs/menu lateral.png" alt="Login">
+                        <div class="textContent">
+                            <h3>Quinto Passo</h3>
+                            <p>Menu lateral</p>
+                        </div>
+                    </li>
+                    <li onclick="changeVideo(event)" class="step">
+                        <img src="./assets/imgs/calendario.png" alt="Login">
+                        <div class="textContent">
+                            <h3>Sexto Passo</h3>
+                            <p>Calendário</p>
+                        </div>
+                    </li>
+                    <li onclick="changeVideo(event)" class="step">
+                        <img src="./assets/imgs/grade curricular.png" alt="Login">
+                        <div class="textContent">
+                            <h3>Sétimo Passo</h3>
+                            <p>Grade curricular</p>
+                        </div>
+                    </li>
+                    <li onclick="changeVideo(event)" class="step">
+                        <img src="./assets/imgs/quadro de horarios.png" alt="Login">
+                        <div class="textContent">
+                            <h3>Oitavo Passo</h3>
+                            <p>Quadro de horários</p>
+                        </div>
+                    </li>
+                    <li onclick="changeVideo(event)" class="step">
+                        <img src="./assets/imgs/rematricula.png" alt="Login">
+                        <div class="textContent">
+                            <h3>Nono Passo</h3>
+                            <p>Rematrícula online</p>
+                        </div>
+                    </li>
+                    <li onclick="changeVideo(event)" class="step">
+                        <img src="./assets/imgs/desempenho.png" alt="Login">
+                        <div class="textContent">
+                            <h3>Décimo Passo</h3>
+                            <p>Desempenho do aluno</p>
+                        </div>
+                    </li>
+                    <li onclick="changeVideo(event)" class="step">
+                        <img src="./assets/imgs/faltas.png" alt="Login">
+                        <div class="textContent">
+                            <h3>Décimo primeiro Passo</h3>
+                            <p>Faltas</p>
+                        </div>
+                    </li>
+                    <li onclick="changeVideo(event)" class="step">
+                        <img src="./assets/imgs/notas e faltas.png" alt="Login">
+                        <div class="textContent">
+                            <h3>Décimo segundo Passo</h3>
+                            <p>Notas e faltas unificadas</p>
+                        </div>
+                    </li>
+                    <li onclick="changeVideo(event)" class="step">
+                        <img src="./assets/imgs/notas.png" alt="Login">
+                        <div class="textContent">
+                            <h3>Décimo terceiro Passo</h3>
+                            <p>Notas</p>
+                        </div>
+                    </li>
+                    <li onclick="changeVideo(event)" class="step">
+                        <img src="./assets/imgs/requerimentos.png" alt="Login">
+                        <div class="textContent">
+                            <h3>Décimo quarto Passo</h3>
+                            <p>Requerimentos</p>
+                        </div>
+                    </li>
+                    <li onclick="changeVideo(event)" class="step">
+                        <img src="./assets/imgs/arquivos.png" alt="Login">
+                        <div class="textContent">
+                            <h3>Décimo quinto Passo</h3>
+                            <p>Arquivos</p>
+                        </div>
+                    </li>
+                    <li onclick="changeVideo(event)" class="step">
+                        <img src="./assets/imgs/financeiro.png" alt="Login">
+                        <div class="textContent">
+                            <h3>Décimo sexto Passo</h3>
+                            <p>Financeiro</p>
+                        </div>
+                    </li>
+                    <li onclick="changeVideo(event)" class="step">
+                        <img src="./assets/imgs/negociacao online.png" alt="Login">
+                        <div class="textContent">
+                            <h3>Décimo sétimo Passo</h3>
+                            <p>Negociação online</p>
+                        </div>
+                    </li>
+                    <li onclick="changeVideo(event)" class="step">
+                        <img src="./assets/imgs/avaliacao institucional.png" alt="Login">
+                        <div class="textContent">
+                            <h3>Décimo oitavo Passo</h3>
+                            <p>Avaliação institucional</p>
+                        </div>
+                    </li>
+                    <li onclick="changeVideo(event)" class="step">
+                        <img src="./assets/imgs/biblioteca.png" alt="Login">
+                        <div class="textContent">
+                            <h3>Décimo nono Passo</h3>
+                            <p>Biblioteca</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="playingVideo">
+                <h1 id="videoTitle">Primeiro Passo: Entrando no portal e Esqueci minha senha</h1>
+                <video id="video" src="./videos/1.mp4" controls></video>
+                <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/zR29mGQv6FM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+            </div>
         </div>
     </main>
     <footer>
