@@ -153,9 +153,9 @@ img, h3, p, .textContent{
     }
 }
 
-@media (max-height: 770px){
+@media (max-height: 770px) and (min-width: 1040px) {
     #container{
-        max-height: 35vw;
+        max-height: 80vh;
     }
     .playingVideo video{
         border: 1px solid #ffffff;
