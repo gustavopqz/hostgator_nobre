@@ -1,15 +1,14 @@
 main{
     display: flex;
     justify-content: space-between;
-    min-height: 85vh;
+    min-height: 88vh;
+    background-color: #00000090;
 }
 
 .playingVideo{
     padding-inline: 2em;
-    background-color: #00000090;
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     padding-top: 1em;
 }
 
@@ -28,14 +27,19 @@ main{
     min-width: 25vw;
     border-top: 1px solid var(--darkblue);
     color: #ffffff;
-    background-color: #00000090;
+    background-color: #112B43;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 10px;
-    padding: 1em 0;
-    padding-left: 2em;
+    /* gap: 10px; */
+    margin: 1em 0;
+    margin-left: 2em;
+    padding: 0.5em;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 0 10px 1px #000;
+    direction: rtl;
 }
 
 #tutorials h2{
@@ -48,6 +52,8 @@ main{
     display: flex;
     flex-direction: column;
     gap: 10px;
+    max-height: 80vh;
+    overflow-y: scroll;
     /* min-height: 100%;
     gap: 1em; */
 }
@@ -59,18 +65,13 @@ main{
     list-style: none;
     display: flex;
     align-items: center;
+    flex-direction: row-reverse;
     gap: 10px;
     padding-inline: 10px;
-    width: 100%;
+    width: 98%;
     /* margin-left: 7%; */
     border-radius: 4px 0 0 4px;
     transition: ease .2s;
-}
-
-.step h3{
-    display: flex;
-    align-items: center;
-    gap: 10px;
 }
 
 .step img{
@@ -82,6 +83,10 @@ main{
 .step:hover{
     color: var(--logoblue);
     background-color: #ffffff;
+}
+
+.textContent p, .textContent h3{
+    text-align: end;
 }
 
 .active{

@@ -72,3 +72,22 @@ header{
         text-align: center;
     }
 }
+
+@media (max-width: 780px){
+    header{
+        flex-direction: row;
+        padding: .5em;
+        justify-content: space-around;
+    }
+    #navigation li:nth-child(1), #navigation li:nth-child(2){
+        display: none;
+    }
+
+    #navigation li{
+        font-size: 1.3em;
+    }
+
+    #headerLogo{
+        margin-top: 0;
+    }
+}
