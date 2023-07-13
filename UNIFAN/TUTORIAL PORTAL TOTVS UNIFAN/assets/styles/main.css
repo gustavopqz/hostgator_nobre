@@ -153,7 +153,7 @@ img, h3, p, .textContent{
     }
 }
 
-@media (max-height: 770px) and (min-width: 1040px) {
+@media (max-height: 1000px) and (min-width: 1040px) {
     #container{
         max-height: 80vh;
     }
@@ -163,5 +163,11 @@ img, h3, p, .textContent{
     }
     #videoTitle{
         font-size: 1.6em;
+    }
+}
+
+@media (max-height: 660px) and (min-width: 1040px){
+    .playingVideo video{
+        max-width: 120vh;
     }
 }
