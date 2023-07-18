@@ -10,11 +10,41 @@ html{
 }
 
 body{
-    background: url('../imgs/background1.jpeg');
-    background-size: cover;
+  background: url('../imgs/background1.jpeg');
+  background-size: cover;
 }
 
 :root{
     --logoblue: #000;
     --darkblue: #000;
+    --orange: #af4d10;
+}
+
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #000000 var(--orange);
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 16px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: var(--orange);
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #000000;
+    border-radius: 10px;
+    border: 3px solid var(--orange);
+  }
+
+
+@media (max-width: 1040px){
+    body{
+        background: var(--orange);
+    }
 }

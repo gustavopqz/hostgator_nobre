@@ -13,57 +13,61 @@
     <link rel="stylesheet" href="./assets/styles/footer.css">
 
     <script src="./scripts/changeVideo.js" defer></script>
-    <title>Tutoriais - Portal do Professor UNEF</title>
+    <title>Tutoriais - Portal Acadêmico UNEF</title>
 </head>
 <body>
     <header>
-        <img id="headerLogo" src="./assets/imgs/unef_vertical.png" alt="logo_unef">
-        <nav>
-            <ul id="navigation">
-                <li class="navButton"><a href="https://unef.edu.br/">Home</a></li>
-                <li class="navButton activeNavigation">Tutoriais - Portal do professor</li>
-                <li class="navButton"><a href="http://gnunef.ddns.com.br:9576/FrameHTML/web/app/Edu/PortaldoProfessor/#/login" target="_blank">Acesse o portal</a></li>
-            </ul>
-        </nav>
+        <div id="top">
+            <a href="https://unef.edu.br/"><img id="headerLogo" src="./assets/imgs/unef_vertical.png" alt="logo_unef"></a>
+            <nav>
+                <ul id="navigation">
+                    <li class="navButton"><a href="https://unef.edu.br/">Home</a></li>
+                    <li class="navButton activeNavigation">Tutoriais - Portal do professor</li>
+                    <!-- <li class="navButton"><a href="http://gnunef.ddns.com.br:9577/FrameHTML/web/app/Edu/PortalEducacional/login/" target="_blank">Acesse o portal</a></li> -->
+                </ul>
+            </nav>
+        </div>
     </header>
     <main>
-        <div id="tutorials">
-            <!-- <h2>Tutoriais - Portal do aluno</h2> -->
-            <ul id="videos">
-                <li onclick="changeVideo(event)" class="step active">
-                    <img src="./assets/imgs/acesso.png" alt="Login">
-                    <div class="textContent">
-                        <h3>Primeiro Passo</h3>
-                        <p>Acesso ao portal</p>
-                    </div>
-                </li>
-                <li onclick="changeVideo(event)" class="step">
-                    <img src="./assets/imgs/senha incorreta.png" alt="Login">
-                    <div class="textContent">
-                        <h3>Segundo Passo</h3>
-                        <p>Frequência</p>
-                    </div>
-                </li>
-                <li onclick="changeVideo(event)" class="step">
-                    <img src="./assets/imgs/esqueceu a senha.png" alt="Login">
-                    <div class="textContent">
-                        <h3>Terceiro Passo</h3>
-                        <p>Digitação de notas</p>
-                    </div>
-                </li>
-                <li onclick="changeVideo(event)" class="step">
-                    <img src="./assets/imgs/mural.png" alt="Login">
-                    <div class="textContent">
-                        <h3>Quarto Passo</h3>
-                        <p>Ocorrências</p>
-                    </div>
-                </li>
-            </ul>
-        </div>
-        <div class="playingVideo">
-            <h1 id="videoTitle">Primeiro Passo: Entrando no portal e Esqueci minha senha</h1>
-            <video id="video" src="./videos/1.mp4" controls></video>
-            <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/zR29mGQv6FM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+        <div id="container">
+            <div id="tutorials">
+                <!-- <h2>Tutoriais - Portal do aluno</h2> -->
+                <ul id="videos">
+                    <li onclick="changeVideo(event)" class="step active">
+                        <img src="./assets/imgs/acesso.png" alt="Login">
+                        <div class="textContent">
+                            <h3>Primeiro Passo</h3>
+                            <p>Acesso ao portal</p>
+                        </div>
+                    </li>
+                    <li onclick="changeVideo(event)" class="step">
+                        <img src="./assets/imgs/frequencia.png" alt="Login">
+                        <div class="textContent">
+                            <h3>Segundo Passo</h3>
+                            <p>Frequência</p>
+                        </div>
+                    </li>
+                    <li onclick="changeVideo(event)" class="step">
+                        <img src="./assets/imgs/notas.png" alt="Login">
+                        <div class="textContent">
+                            <h3>Terceiro Passo</h3>
+                            <p>Digitação de notas</p>
+                        </div>
+                    </li>
+                    <li onclick="changeVideo(event)" class="step">
+                        <img src="./assets/imgs/ocorrencias.png" alt="Login">
+                        <div class="textContent">
+                            <h3>Quarto Passo</h3>
+                            <p>Ocorrências</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="playingVideo">
+                <h1 id="videoTitle">Primeiro Passo: Entrando no portal e Esqueci minha senha</h1>
+                <video id="video" src="./videos/1.mp4" controls></video>
+                <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/zR29mGQv6FM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+            </div>
         </div>
     </main>
     <footer>
