@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="./assets/styles/all.css">
+    <link rel="stylesheet" href="./assets/styles/header.css">
+    <link rel="stylesheet" href="./assets/styles/main.css">
+    <link rel="stylesheet" href="./assets/styles/footer.css">
+
+    <script src="./scripts/changeVideo.js" defer></script>
+    <title>Tutoriais - Portal do professor UNIFAN</title>
+</head>
+<body>
+    <header>
+        <div id="top">
+            <a href="https://unifan.edu.br/"><img id="headerLogo" src="./assets/imgs/unifan_logo.png" alt="logo_unifan"></a>
+            <nav>
+                <ul id="navigation">
+                    <li class="navButton"><a href="https://unifan.edu.br/">Home</a></li>
+                    <li class="navButton activeNavigation">Tutoriais - Portal do professor</li>
+                    <!-- <li class="navButton"><a href="http://gnunef.ddns.com.br:9577/FrameHTML/web/app/Edu/PortalEducacional/login/" target="_blank">Acesse o portal</a></li> -->
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div id="container">
+            <div id="tutorials">
+                <!-- <h2>Tutoriais - Portal do aluno</h2> -->
+                <ul id="videos">
+                    <li onclick="changeVideo(event)" class="step active">
+                        <img src="./assets/imgs/acesso.png" alt="Login">
+                        <div class="textContent">
+                            <h3>Primeiro Passo</h3>
+                            <p>Acesso ao portal</p>
+                        </div>
+                    </li>
+                    <li onclick="changeVideo(event)" class="step">
+                        <img src="./assets/imgs/frequencia.png" alt="Login">
+                        <div class="textContent">
+                            <h3>Segundo Passo</h3>
+                            <p>Frequência</p>
+                        </div>
+                    </li>
+                    <li onclick="changeVideo(event)" class="step">
+                        <img src="./assets/imgs/notas.png" alt="Login">
+                        <div class="textContent">
+                            <h3>Terceiro Passo</h3>
+                            <p>Digitação de notas</p>
+                        </div>
+                    </li>
+                    <li onclick="changeVideo(event)" class="step">
+                        <img src="./assets/imgs/ocorrencias.png" alt="Login">
+                        <div class="textContent">
+                            <h3>Quarto Passo</h3>
+                            <p>Ocorrências</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="playingVideo">
+                <h1 id="videoTitle">Primeiro Passo: Entrando no portal e Esqueci minha senha</h1>
+                <video id="video" src="./videos/1.mp4" controls></video>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footerDiv" id="logoDiv">
+            <img id="logoFooter" src="./assets/imgs/unifan_logo.png" alt="Logo Colégio Nobre">
+        </div>
+        <div class="footerDiv" id="location">
+            <p>Av. Maria Quitéria, 2116</p>
+            <p>Centro, Feira de Santana - BA, 44001-008</p>
+            <p>Telefone: (75) 2102-9100</p>
+        </div>
+    </footer>
+</body>
+</html>
